@@ -62,5 +62,56 @@ li {
 /* Styles for completed tasks (adds a strikethrough effect) */
 .completed {
     text-decoration: line-through;
-    color: #999;
+    color: #888;
+    font-style: italic;
+}
+
+/* Styles for task container */
+li {
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Forces content to stack vertically */
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Styles for the content part (text + checkbox) */
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Add space between the checkbox and the text */
+    width: 100%;
+}
+
+/* Styles for buttons container */
+.task-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Ensure buttons are the same width */
+.task-buttons button {
+    flex: 1;
+}
+
+/* Responsive: Make tasks full width on smaller screens */
+@media (max-width: 480px) {
+    li {
+        width: 90%;
+    }
+
+    .task-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
 }

@@ -16,11 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create a new list item for the task
         const taskItem = document.createElement("li");
         taskItem.innerHTML = `
-            <input type="checkbox" class="task-checkbox"> <!-- Checkbox to mark task as complete -->
-            <span class="task-text">${taskText}</span> <!-- Task text -->
-            <button class="edit-btn">Edit</button> <!-- Button to edit task -->
-            <button class="remove-btn">Remove</button> <!-- Button to remove task -->
+            <div class="task-content">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">${taskText}</span>
+            </div>
+            <div class="task-buttons">
+                <button class="edit-btn">Edit</button>
+                <button class="remove-btn">Remove</button>
+            </div>
         `;
+
 
         taskList.appendChild(taskItem); // Add the task item to the task list
         taskInput.value = ""; // Clear input field after adding the task
@@ -45,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } else if (target.classList.contains("task-checkbox")) {
             // Toggle the completed class when the checkbox is clicked
-            taskItem.classList.toggle("completed");
+            taskItem.querySelector(".task-text").classList.toggle("completed");
         }
     });
 });
