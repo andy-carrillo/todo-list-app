@@ -23,16 +23,16 @@ A simple and responsive web-based task manager that allows users to add, edit, c
 
 ## 📸 Screenshots
 ### 🖥️ Desktop View
-![Initial View](screenshots/screenshot1.png)
+![Initial View](assets/screenshots/screenshot1.png)
 _Initial state of the application._
 
-![Adding Tasks](screenshots/screenshot2.png)
+![Adding Tasks](assets/screenshots/screenshot2.png)
 _Tasks added to the list._
 
-![Marking as Completed](screenshots/screenshot3.png)
+![Marking as Completed](assets/screenshots/screenshot3.png)
 _Task marked as completed with strikethrough._
 
-![Editing Task](screenshots/screenshot4.png)
+![Editing Task](assets/screenshots/screenshot4.png)
 _Editing a task._
 
 ## 🌍 Live Demo
