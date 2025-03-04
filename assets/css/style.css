@@ -25,19 +25,40 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-/* ====== Add Task Button ====== */
+/* ====== General button styles ====== */
 button {
     padding: 10px 15px;
-    background-color: #28a745; /* Green color for a positive action */
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /* Changes cursor to pointer when hovering */
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* Changes button color when hovered */
-button:hover {
+/* Specific button colors */
+#addTaskButton {
+    background-color: #28a745; /* Green */
+}
+
+.edit-btn {
+    background-color: #007bff; /* Blue */
+}
+
+.remove-btn {
+    background-color: #dc3545; /* Red */
+}
+
+/* Hover effects */
+#addTaskButton:hover {
     background-color: #218838;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
 }
 
 /* ====== Task List Styling ====== */
