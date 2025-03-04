@@ -3,6 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get references to the necessary elements in the DOM
     const taskInput = document.getElementById("taskInput"); // Input field for new tasks
     const addTaskButton = document.getElementById("addTaskButton"); // Button to add tasks
+
+    // Allow adding a task by pressing "Enter" in the input field
+    taskInput.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevents accidental form submission if inside a form
+            addTaskButton.click(); // Triggers the same action as clicking the "Add Task" button
+        }
+    });
+
     const taskList = document.getElementById("taskList"); // Container where tasks will be displayed
 
     /**
