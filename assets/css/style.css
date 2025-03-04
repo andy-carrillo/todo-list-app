@@ -1,0 +1,66 @@
+/* ====== General Styles ====== */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean and readable font */
+    background-color: #f4f4f4; /* Light grey background for better contrast */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centers text and elements */
+}
+
+/* ====== Title Style ====== */
+h1 {
+    color: #333; /* Dark grey title color for contrast */
+}
+
+/* ====== Task Input Section ====== */
+.task-input {
+    margin-bottom: 20px; /* Adds spacing below the input section */
+}
+
+/* Styles for the input field */
+input[type="text"] {
+    padding: 10px;
+    width: 250px; /* Defines a fixed width for better usability */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ====== Add Task Button ====== */
+button {
+    padding: 10px 15px;
+    background-color: #28a745; /* Green color for a positive action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changes cursor to pointer when hovering */
+}
+
+/* Changes button color when hovered */
+button:hover {
+    background-color: #218838;
+}
+
+/* ====== Task List Styling ====== */
+ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+/* Styles each task item */
+li {
+    background: white;
+    margin: 5px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Aligns text and buttons properly */
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Styles for completed tasks (adds a strikethrough effect) */
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
