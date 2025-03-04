@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Get references to the necessary elements in the DOM
     const taskInput = document.getElementById("taskInput"); // Input field for new tasks
     const addTaskButton = document.getElementById("addTaskButton"); // Button to add tasks
+    const taskList = document.getElementById("taskList"); // Container where tasks will be displayed
 
     // Allow adding a task by pressing "Enter" in the input field
     taskInput.addEventListener("keypress", (event) => {
@@ -11,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             addTaskButton.click(); // Triggers the same action as clicking the "Add Task" button
         }
     });
-
-    const taskList = document.getElementById("taskList"); // Container where tasks will be displayed
-
+    
     /**
      * Adds a new task to the task list when the "Add Task" button is clicked.
      * Ensures that the task is not empty before adding it.
