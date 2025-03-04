@@ -40,5 +40,5 @@ You can access the live version of the application here:
 🔗 [To-Do List App](https://andy-carrillo.github.io/todo-list-app/)
 
 ## 👨‍💻 Author
-Developed by **Andrés Carrillo**.
+Developed by **Andrés Carrillo**.  
 For educational purposes – *University of the People (UoPeople), Web Programming 1* 📚
